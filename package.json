@@ -1,0 +1,20 @@
+{
+  "name": "excel-to-json",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:win": "pkg index.js --output dist/excel-to-json-win --targets latest-win-x64",
+    "build:linux": "pkg index.js --output dist/excel-to-json-linux --targets latest-linux-x64",
+    "build:mac": "pkg index.js --output dist/excel-to-json-mac --targets latest-macos-x64",
+    "build": "npm run build:win && npm run build:linux && npm run build:mac"
+  },
+  "author": "Zhao Jin",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
